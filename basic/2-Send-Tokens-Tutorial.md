@@ -15,7 +15,7 @@
 
 ```
 - 2: **You need** to look for the ` tokenid ` that long number is what you will need to send the token-
-- 3: **Follow** the first tutorial on this link to create an address wallet: <https://github.com/elledaniels/Minima-tutorials/blob/main/tutorials/basic/1-UTXO-create-send-Tutorial.md>
+- 3: **Follow** the first tutorial on this link to create an address wallet: <https://github.com/josua-j/Tutorials-3/blob/main/basic/1-UTXO-create-send-Tutorial.md>
 - 4: **Add** to the last part of the command after the ` amount ` part ` tokenid: ` and paste the tokenid on the step 2
 - 5: **Thats it**, the amount selected of the tokenid will be sent to the address you selected.
 ------------------------------------------------------------
