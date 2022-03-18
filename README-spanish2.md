@@ -23,7 +23,7 @@ Una serie de tutoriales sobre la blockchain Minima, desde el nivel básico al av
    Para poder conseguir los Tokens los tendremos que pedir en el Discord de Minima, en el canal "#app-chat" publicando nuestra dirección wallet y pidiendo que nos envíen algunos Tokens.
   - <https://github.com/josua-j/Tutorials-3/blob/main/basic/2-Send-Tokens-Tutorial.md>
 
-- **Tutorial 3: Crear un Tokens parte 1**
+- **Tutorial 3: Crear un Token parte 1**
   - Este tutorial que consta de dos partes, en la primera parte aprenderemos a utilizar la consola de Minima y los comandos que esta nos proporciona para crear un Token a partir de monedas Minima(un token siempre necesita una parte fraccional de 1 minima para poderlo crear).
   En esta primera parte también explicaremos, a un nivel básico, que son las transacciones y como entender el resultado de la consola cuando ejecutamos el comando de crear un token.
   - <https://github.com/josua-j/Tutorials-3/blob/main/basic/3-Create_token-tutorial-1.md>
