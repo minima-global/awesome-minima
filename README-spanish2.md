@@ -13,7 +13,7 @@ Una serie de tutoriales sobre la blockchain Minima, desde el nivel básico al av
   - <https://github.com/josua-j/Tutorials-3/blob/main/basic/1-UTXO-create-send-Tutorial.md>
 
 - **Tutorial 2: Enviar Tokens**
-  - En este tutorial aprenderemos a enviar Tokens en vez de Minimas, tendrás que localizar la propiedad _tokenid_  , la cual es prescindible para poder enviar Tokens entre dos nodos a sus direcciones wallet, utilizaremos la consola y los comandos que Minima nos proporciona para realizar el tutorial.
+  - En este tutorial aprenderemos a enviar Tokens en vez de Minimas, tendrás que localizar la propiedad _tokenid_  , la cual es imprescindible para poder enviar Tokens entre dos nodos a sus direcciones wallet, utilizaremos la consola y los comandos que Minima nos proporciona para realizar el tutorial.
   - Lo podemos realizar de varias formas:
     - Utilizando un mismo ordenador con dos nodos Minima funcionando en distintos puertos.
     - Utilizando dos ordenadores distintos los cuales estarán ejecutando un nodo Minima cada uno.
