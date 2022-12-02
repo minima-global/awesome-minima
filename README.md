@@ -28,9 +28,9 @@ Please adhere to the following guidance when creating Minima tutorials.
 > Are there any other tutorials that should be completed before this? <br/>
 > How many nodes are required to complete the tutorial?<br/>
 > Should they have some test Minima to be able to complete the tutorial?
+> Are there any dependencies on other libraries e.g. mds.js, service.js?<br/>
 >
 > ## Tutorial
-> Are there any dependencies on other libraries e.g. mds.js, service.js?<br/>
 > The tutorial should have clear step by step instructions with commented code snippets.<br/>
 > Code should be contained in code blocks. <br/>
 > See https://www.markdownguide.org/cheat-sheet/ for help.
