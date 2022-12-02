@@ -8,15 +8,6 @@ Please adhere to the following guidance when creating Minima tutorials.
 
 1. Please ensure your tutorial is written in clear English, please request assistance from a fluent English speaker if you need help. 
 2. Your tutorial should be submitted as a markdown (.md) file with the structure as detailed below
-
-Title (h1)<br/>
-Purpose (h2)<br/>
-You will learn (h2)<br/>
-Pre-requisites (h2)<br/>
-Tutorial (h2)<br/>
-Tags (h4)<br/>
-
-# Example
  
 > # Title
 > A short, descriptive title.
@@ -56,4 +47,3 @@ Tags (h4)<br/>
 > MiniDapp<br/>
 > Smart-Contract<br/>
 > Script<br/>
-
