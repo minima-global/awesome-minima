@@ -622,11 +622,11 @@ Alternative methods in this tutorial could have been:
 ```
 txninput id:simpletxn coinid:0x9ADD6E64E7D4DE63F4472C730ECEDDA8BC37C2F1A906E126F81C584EF172CF3A scriptmmr:true
 ```
-2. Instead of using `txnbasics id:simpletxn`, you could do it in one step with 
+2. Instead of using `txnbasics id:simpletxn`, you could do it in one step with:
 ```
 txnpost id:simpletxn auto:true
 ```
-3. You could add a burn at the `txnpost` step with 
+3. If you had more than one coin on node 1, you could add a burn at the `txnpost` step with:
 ```
 txnpost id:simpletxn burn:1
 ```
