@@ -1,4 +1,4 @@
-# How to construct a custom transaction 
+# How to construct a simple transaction manually
  
 ## Purpose
 The purpose of this tutorial is to demonstrate how to manually construct a simple transaction on Minima.
