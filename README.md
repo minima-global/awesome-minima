@@ -1,8 +1,15 @@
-# Tutorials
-How to use Minima in action.<br/>
+# Tutorials: Minima in action
+
+Please refer to the guidance below before starting your tutorial. 
+
 Tutorials should provide step by step instructions and explanations of reusable code that can be used when creating MiniDapps.
 
-[Example Transaction Tutorial](https://github.com/minima-global/Tutorials/blob/main/Example-Basic_Transaction_Tutorial.md)
+
+Please review the open Issues [here](https://github.com/minima-global/Tutorials/issues) to see the tutorials which are available for rewards through the Minima Grants Program.
+
+## Example
+[Simple Transaction Tutorial](https://github.com/minima-global/Tutorials/blob/main/Example-Basic_Transaction_Tutorial.md)
+
 
 ## Guidance
 
