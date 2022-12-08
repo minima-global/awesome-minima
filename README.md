@@ -4,7 +4,6 @@ Please refer to the guidance below before starting your tutorial.
 
 Tutorials should provide step by step instructions and explanations of reusable code that can be used when creating MiniDapps.
 
-
 Please review the open Issues [here](https://github.com/minima-global/Tutorials/issues) to see the tutorials which are available for rewards through the Minima Grants Program.
 
 ## Example
@@ -13,10 +12,9 @@ Please review the open Issues [here](https://github.com/minima-global/Tutorials/
 
 ## Guidance
 
-Please adhere to the following guidance when creating Minima tutorials.
-
 1. Please ensure your tutorial is written in clear English, please request assistance from a fluent English speaker if you need help. 
 2. Your tutorial should be submitted as a markdown (.md) file with the structure as detailed below
+3. A link to your completed tutorial should be sent to grants@minima.global for review
  
 > # Title
 > A short, descriptive title.
