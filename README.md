@@ -8,7 +8,7 @@ Tutorials will be open-source and used by developers learning to building on Min
 
 The Developer Grants Program rewards developers (in $MINIMA coins) for writing Minima code tutorials that can be used when creating MiniDapps.
 
-1. Register as a community developer by completing the survey in the **#developer-surveys** channel in our [Discord channel](https://discord.gg/minima)
+1. Register as a community developer by completing the survey in the **#developer-surveys** channel in our [Discord channel](https://discord.gg/minima). (You will need to give yourself the community-developer role from the #role-picker channel).
 2. Select a Tutorial from the [Open Issues](https://github.com/minima-global/Tutorials/issues). These are the only Tutorials we will accept for Rewards.
 3. Write your Tutorial following the guidance below. 
 4. Submit a link to your tutorial to **grants@minima.global** for review
