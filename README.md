@@ -1,12 +1,12 @@
 # Tutorials: Minima in action
 
-Please refer to the guidance below before starting your tutorial. 
+Please read before starting your tutorial. 
 
-Tutorials should provide step by step instructions and explanations of reusable code that can be used when creating MiniDapps.
+Tutorials will be open-source and used by developers learning to building on Minima.
 
-## How to be rewarded (in $MINIMA coins) for your Tutorial
+## How to be rewarded for your Tutorial
 
-The Developer Grants Program rewards developers for writing Minima code tutorials.
+The Developer Grants Program rewards developers (in $MINIMA coins) for writing Minima code tutorials that can be used when creating MiniDapps.
 
 1. Register as a community developer by completing the survey in the **#developer-surveys** channel in our [Discord channel](https://discord.gg/minima)
 2. Select a Tutorial from the [Open Issues](https://github.com/minima-global/Tutorials/issues). These are the only Tutorials we will accept for Rewards.
@@ -14,10 +14,14 @@ The Developer Grants Program rewards developers for writing Minima code tutorial
 4. Submit a link to your tutorial to **grants@minima.global** for review
 5. If your Tutorial meets the required standard, we will contact you about your reward which will be issued via a SAFT agreement
 
+Tutorials can be written or recorded on video with bonus rewards available for submitting both written and video versions.
+
+Rewards will vary based on complexity and quality (between 200-2000 $MINIMA).
+
 **PLEASE NOTE: WE ARE UNABLE TO ISSUE REWARDS TO INDIVIDUALS IN OFAC SANCTIONED COUNTRIES.**
 
 ## Example
-Please review this example Tutorial:
+Please review this example:
 
 [Simple Transaction Tutorial](https://github.com/minima-global/Tutorials/blob/main/Example-Basic_Transaction_Tutorial.md)
 
@@ -25,7 +29,8 @@ Please review this example Tutorial:
 
 1. Please ensure your tutorial is written in clear English, please request assistance from a fluent English speaker if you need help. 
 2. Your tutorial should be submitted as a **markdown (.md)** file with the structure as detailed below
- 
+3. They should be complete, easy to follow and well commented.
+
 > # Title
 > A short, descriptive title.
 > 
