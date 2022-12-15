@@ -8,12 +8,13 @@ Tutorials should provide step by step instructions and explanations of reusable 
 
 The Developer Grants Program rewards developers for writing Minima code tutorials.
 
-1. Select a Tutorial from the [Open Issues](https://github.com/minima-global/Tutorials/issues). These are the only Tutorials we will accept for Rewards.
-2. Write your Tutorial following the guidance below. 
-3. Submit a link to your tutorial to grants@minima.global for review
-4. If your Tutorial meets the required standard, we will contact you about your reward which will be issued via a SAFT agreement
+1. Register as a community developer by completing the survey in the **#developer-surveys** channel in our [Discord channel](https://discord.gg/minima)
+2. Select a Tutorial from the [Open Issues](https://github.com/minima-global/Tutorials/issues). These are the only Tutorials we will accept for Rewards.
+3. Write your Tutorial following the guidance below. 
+4. Submit a link to your tutorial to **grants@minima.global** for review
+5. If your Tutorial meets the required standard, we will contact you about your reward which will be issued via a SAFT agreement
 
-PLEASE NOTE: WE ARE UNABLE TO ISSUE REWARDS TO INDIVIDUALS IN OFAC SANCTIONED COUNTRIES.
+**PLEASE NOTE: WE ARE UNABLE TO ISSUE REWARDS TO INDIVIDUALS IN OFAC SANCTIONED COUNTRIES.**
 
 ## Example
 Please review this example Tutorial:
@@ -23,7 +24,7 @@ Please review this example Tutorial:
 ## Guidance
 
 1. Please ensure your tutorial is written in clear English, please request assistance from a fluent English speaker if you need help. 
-2. Your tutorial should be submitted as a markdown (.md) file with the structure as detailed below
+2. Your tutorial should be submitted as a **markdown (.md)** file with the structure as detailed below
  
 > # Title
 > A short, descriptive title.
