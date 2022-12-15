@@ -4,17 +4,26 @@ Please refer to the guidance below before starting your tutorial.
 
 Tutorials should provide step by step instructions and explanations of reusable code that can be used when creating MiniDapps.
 
-Please review the open Issues [here](https://github.com/minima-global/Tutorials/issues) to see the tutorials which are available for rewards through the Minima Grants Program.
+## How to be rewarded (in $MINIMA coins) for your Tutorial
+
+The Developer Grants Program rewards developers for writing Minima code tutorials.
+
+1. Select a Tutorial from the [Open Issues](https://github.com/minima-global/Tutorials/issues). These are the only Tutorials we will accept for Rewards.
+2. Write your Tutorial following the guidance below. 
+3. Submit a link to your tutorial to grants@minima.global for review
+4. If your Tutorial meets the required standard, we will contact you about your reward which will be issued via a SAFT agreement
+
+PLEASE NOTE: WE ARE UNABLE TO ISSUE REWARDS TO INDIVIDUALS IN OFAC SANCTIONED COUNTRIES.
 
 ## Example
-[Simple Transaction Tutorial](https://github.com/minima-global/Tutorials/blob/main/Example-Basic_Transaction_Tutorial.md)
+Please review this example Tutorial:
 
+[Simple Transaction Tutorial](https://github.com/minima-global/Tutorials/blob/main/Example-Basic_Transaction_Tutorial.md)
 
 ## Guidance
 
 1. Please ensure your tutorial is written in clear English, please request assistance from a fluent English speaker if you need help. 
 2. Your tutorial should be submitted as a markdown (.md) file with the structure as detailed below
-3. A link to your completed tutorial should be sent to grants@minima.global for review
  
 > # Title
 > A short, descriptive title.
