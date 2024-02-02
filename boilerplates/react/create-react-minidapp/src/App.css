@@ -1,0 +1,38 @@
+.App {
+  text-align: center;
+}
+
+.logo {
+  width: 100px;
+  pointer-events: none;
+  margin-bottom: 20px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .logo {
+    animation: pulsate infinite 3s ease-in-out;
+  }
+}
+
+.container {
+  background-color: #ffffff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  color: #555;
+}
+
+@keyframes pulsate {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+  transform: scale(1);
+}
+}
