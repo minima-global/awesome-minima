@@ -1,0 +1,91 @@
+<head>
+  <!--   The MINIMA MDS JavaScript Library -->
+  <script type="text/javascript" src="mds.js"></script>
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <title>My Wallet</title>
+</head>
+<body>
+  <!-- HTML Elements for wallet -->
+  <h2>My Wallet</h2>
+  <p>Current confirmed balance: <span id="balance"></span></p>
+  <p>Current unconfirmed balance: <span id="unconfirmed-balance"></span></p>
+  <p>Wallet Address: <span id="address"></span></p>
+
+  <label for="address">Send To:</label>
+  <input type="text" name="sendAddress" id="sendAddress" placeholder="address">
+  <label for="amount">Amount</label>
+  <input id="amount" name="send" placeholder="amount" type="text" />
+  
+  <p>Status :<span id="status"></Status:span></p>
+
+  <button onclick="Send()">Send</button>
+
+  <script type="text/javascript">
+
+    // Send function to send Minima
+    function Send() {
+      //Get the address and amount from the input fields
+      const sendAddress = document.getElementById("sendAddress").value
+      const sendAmount = document.getElementById("amount").value
+      //Call the send command with the address and amount
+      MDS.cmd(
+        `send address: ${sendAddress} amount: ${sendAmount}`,
+        function (res) {
+          //Catch error and display an error message
+          if(res.error){         
+          document.getElementById("status").innerText = res.error
+          } else {
+            //Provide success message if transaction is successful
+            document.getElementById("status").innerText = "Something went wrong, please try again."
+          }
+        }
+      )
+    }
+
+    // GetBalance function to get the current balance
+    function GetBalance() {
+      //Call the balance command
+       MDS.cmd("balance", function (res) {
+          //Get the current balances from response
+          const balanceResponse = JSON.stringify(res.response[0].confirmed)
+          const unconfirmedBalanceResponse = JSON.stringify(res.response[0].unconfirmed)
+          // Assign the current balance to the variables and remove the quotes from the response
+          const currentConfirmedBalance = balanceResponse.slice(1, -1)
+          const unConfirmedBalance = unconfirmedBalanceResponse.slice(1, -1)
+          //Display current balance on page
+          document.getElementById("balance").innerText = currentConfirmedBalance
+          document.getElementById("unconfirmed-balance").innerText = unConfirmedBalance
+        })
+    }
+
+    // GetAddress function to get your current address
+    function GetAddress(){
+      //Call the getaddress command
+      MDS.cmd("getaddress", function (res) {
+          
+          //Get the current address from response
+          const addressResponse = JSON.stringify(res.response.miniaddress)
+          //Assign the current address to the variable
+          const address = addressResponse.slice(1, -1)
+          //Display current address on page
+          document.getElementById("address").innerText = address
+        })
+    }
+
+    //Init Minima Api
+    MDS.init(function (msg) {
+      //Listens for the initial inited event
+      if (msg.event === "inited") {
+        //Once MDS is ready call the balance function created above
+        GetBalance()
+        //Once MDS is ready call the getaddress function created above
+        GetAddress()
+      }
+      if (msg.event === "NEWBALANCE") {
+        //Run the balance function when a new balance is received
+        GetBalance()
+      }
+      
+    })
+  </script>
+</body>

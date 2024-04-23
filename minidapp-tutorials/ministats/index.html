@@ -1,0 +1,106 @@
+<head>
+  <!--   The MINIMA MDS JavaScript Library -->
+  <script type="text/javascript" src="mds.js"></script>
+  <!--   The MiniStats JS File -->
+  <script type="text/javascript" src="ministats.js"></script>
+  <!--   The ChartsJS import -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+  <!--   The ChartsJS JS File -->
+  <script type="text/javascript" src="charts.js"></script>
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+
+  <title>Mini Stats</title>
+</head>
+<body>
+  <!-- HTML Elements for MiniStats -->
+  <h1>MiniStats</h1>
+
+  <h2>Block info</h2>
+  <p>Current block: <span id="current-block"></span></p>
+  <p>Current block time: <span id="current-block-time"></span></p>
+  <p>Current block speed: <span id="block-speed"></span></p>
+  <p>Current block difficulty: <span id="block-difficulty"></span></p>
+  <p>Current block hash: <span id="block-hash"></span></p>
+  <br />
+  <h2>Chain info</h2>
+  <p>Current Chain weight: <span id="chain-weight"></span></p>
+  <p>Current Cascade weight: <span id="cascade-weight"></span></p>
+  <p>Total Chain weight: <span id="total-weight"></span></p>
+  <br />
+
+  <h2>Speed statistics</h2>
+  <p>Block Speeds:</p>
+  <ul>
+    <li>Previous 10 blocks:</li>
+    <p>Average speed: <span id="previous-ten"></span></p>
+    <br />
+    <p>Speed</p>
+    <canvas id="myChart" style="width: 100%; max-width: 700px"></canvas>
+    <p>Blocks</p>
+
+    <br />
+    <li>Previous 100 blocks:</li>
+    <p>Average speed: <span id="previous-hundred"></span></p>
+    <br />
+    <p>Speed</p>
+    <canvas id="myChart2" style="width: 100%; max-width: 700px"></canvas>
+    <p>Blocks</p>
+
+    <br />
+    <li>Previous 1000 blocks:</li>
+    <p>Average speed: <span id="previous-thousand"></span></p>
+    <br />
+    <p>Speed</p>
+    <canvas id="myChart3" style="width: 100%; max-width: 700px"></canvas>
+    <p>Blocks</p>
+  </ul>
+
+  <script type="text/javascript">
+    MDS.init(function (msg) {
+      if (msg.event === "inited") {
+        // Create the metrics DB table on initialization
+
+        // Display the metrics table on the page
+        displayMetrics()
+        // Display the charts on the page
+        displayCharts(function () {
+          MDS.log("Previous ten blocks displayed")
+        })
+      } else if (msg.event === "NEWBLOCK") {
+        // Refresh the metrics table on the page
+        displayMetrics()
+        // Refresh the charts on the page
+        window.location.reload()
+      }
+    })
+
+    // Function to display the metrics table on the page
+    function displayMetrics() {
+      MDS.cmd("status", function (msg) {
+        const currentBlockNumber = msg.response.chain.block
+        const currentBlockTime = msg.response.chain.time
+        const currentBlockSpeed = msg.response.chain.speed
+        const currentBlockDifficulty = msg.response.chain.difficulty
+        const currentBlockChainweight = msg.response.chain.weight
+        const currentBlockCascadeWeight = msg.response.chain.cascade.weight
+        const currentBlockHash = msg.response.chain.hash
+        const totalWeight = msg.response.weight
+
+        document.getElementById("current-block").innerText = currentBlockNumber
+        document.getElementById("block-speed").innerText =
+          (1 / currentBlockSpeed).toFixed(1) + " s/block"
+        document.getElementById("block-difficulty").innerText =
+          currentBlockDifficulty
+
+        document.getElementById("chain-weight").innerText =
+          currentBlockChainweight
+        document.getElementById("cascade-weight").innerText =
+          currentBlockCascadeWeight
+        document.getElementById("current-block-time").innerText =
+          currentBlockTime
+        document.getElementById("block-hash").innerText = currentBlockHash
+        document.getElementById("total-weight").innerText = totalWeight
+      })
+    }
+  </script>
+</body>

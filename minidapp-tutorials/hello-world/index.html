@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <!--   The MINIMA MDS JavaScript Library -->
+    <script type="text/javascript" src="mds.js"></script>
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <title>Hello World</title>
+  </head>
+  <body>
+    <style></style>
+
+    <h2>Hello World!</h2>
+    <p>Current Block: <span id="block-id"></span></p>
+
+    <script type="text/javascript">
+      // Initiate current block variable
+      let currentBlock
+      //Init Minima API
+      MDS.init(function (msg) {
+        //Listens for the initial inited event
+        if (msg.event === "inited") {
+          //Once MDS is ready call the block command
+          MDS.cmd("block", function (res) {
+            //Get the current block number from response
+            currentBlock = res.response.block
+            //Display current block nuber on page
+            document.getElementById("block-id").innerText = currentBlock
+          })
+        }
+        //Listens for NEWBLOCK event
+        if (msg.event === "NEWBLOCK") {
+          //Run the block command
+          MDS.cmd("block", function (res) {
+            //Update the current block number
+            currentBlock = res.response.block
+            //Display current block number on page
+            document.getElementById("block-id").innerText = currentBlock
+          })
+        }
+      })
+    </script>
+  </body>
+</html>
